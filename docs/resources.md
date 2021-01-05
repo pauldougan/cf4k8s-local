@@ -9,6 +9,7 @@ Useful resources for learning about kubernetes, minikube and cf4k8s
 # Minikube
 - [minikube](https://minikube.sigs.k8s.io/docs/)
 - [getting started](https://minikube.sigs.k8s.io/docs/start/)
+- [handbook](https://minikube.sigs.k8s.io/docs/handbook/)
 
 # CF for K8S
 - [product page](https://www.cloudfoundry.org/technology/cf-for-k8s/)
