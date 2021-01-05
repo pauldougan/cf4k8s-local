@@ -32,7 +32,7 @@ step3:
 	$(MINIKUBE) addons list
 	$(MINIKUBE) ip
 	
-docs:             ; open https://starkandwayne.com/blog/running-cf-for-k8s-on-minikube/?vgo_ee=rRAPjg%2FWVjzMES6Pz3beI0pak%2BOYOV%2Bn%2BAKg6Zw1pDTQykVaBNHrp5UXoRd9dBvk
+docs:             ; open https://github.com/pauldougan/cf4minikube/blob/main/docs/resources.md
 
 clean:
 	rm -rvf cf-for-k8s
