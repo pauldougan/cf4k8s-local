@@ -2,6 +2,7 @@
 tap "k14s/tap"
 tap "cloudfoundry/tap"
 
+brew "asciinema"
 brew "cloudfoundry/tap/cf-cli@7"
 brew "cloudfoundry/tap/bosh-cli"
 brew "imgpkg"

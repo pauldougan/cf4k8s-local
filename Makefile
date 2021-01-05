@@ -6,6 +6,7 @@ MEMORY        := 8g
 COMMANDS      := dashboard delete ip logs profile status stop version
 
 # tools
+ASCIINEMA     := asciinema
 BREW          := brew
 EDITOR        := vim 
 GREP          := grep 
