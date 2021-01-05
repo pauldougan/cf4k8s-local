@@ -1,7 +1,7 @@
 # environment 
 CPUS          := 6
 DRIVER        := docker
-K8S_VERSION   := 1.19.2
+K8S_VERSION   := 1.20.0
 MEMORY        := 8g
 COMMANDS      := dashboard delete ip logs profile status stop version
 .PHONY: docs casts
@@ -9,11 +9,13 @@ COMMANDS      := dashboard delete ip logs profile status stop version
 # tools
 ASCIINEMA     := asciinema
 BREW          := brew
+DOCKER        := docker
 EDITOR        := vim 
 FIND          := find
 GREP          := grep 
 KUBECTL       := kubectl
 MINIKUBE      := minikube
+SHELL         := bash
 SORT          := sort
 VISIDATA      := vd
 XARGS         := xargs
@@ -24,8 +26,10 @@ $(COMMANDS):      ; $(MINIKUBE) $@
 edit: Makefile    ; $(EDITOR) $<
 addons:           ; $(MINIKUBE) $@ list
 start:            ; $(MINIKUBE) $@ --cpus=$(CPUS) --memory=$(MEMORY) --kubernetes-version=$(K8S_VERSION)  --driver=$(DRIVER)
+foo:
+
 step1:  brew           
-	echo "please ensure docker is running"
+	@ $(DOCKER) version || echo "please ensure docker is running"
 step2:            delete start
 step3:
 	$(MINIKUBE) addons enable metrics-server
@@ -37,7 +41,8 @@ docs:             ; open https://github.com/pauldougan/cf4minikube/blob/main/doc
 clean:
 	rm -rvf cf-for-k8s
 	rm -rvf cf-for-k8s-tmp
-	$(MINIKUBE) delete
+	$(MINIKUBE) delete --all
+	rm -rvf ~/.minikube
 
 nodes namespaces:    ; $(KUBECTL) get namespaces
 pods :               ; $(KUBECTL) get pods --all-namespaces
