@@ -4,15 +4,19 @@ DRIVER        := docker
 K8S_VERSION   := 1.19.2
 MEMORY        := 8g
 COMMANDS      := dashboard delete ip logs profile status stop version
+.PHONY: docs casts
 
 # tools
 ASCIINEMA     := asciinema
 BREW          := brew
 EDITOR        := vim 
+FIND          := find
 GREP          := grep 
 KUBECTL       := kubectl
 MINIKUBE      := minikube
 SORT          := sort
+VISIDATA      := vd
+XARGS         := xargs
 
 help: Makefile    ; @$(GREP) -Eo "^[a-zA-Z0-9_]+:" $< | $(SORT)         
 brew: Brewfile    ; $(BREW) bundle install $<
@@ -37,3 +41,4 @@ clean:
 
 nodes namespaces:    ; $(KUBECTL) get namespaces
 pods :               ; $(KUBECTL) get pods --all-namespaces
+casts:               ; $(FIND) casts -iname "*.cast" | $(VISIDATA) - | $(XARGS) -n 1 $(ASCIINEMA) play             
