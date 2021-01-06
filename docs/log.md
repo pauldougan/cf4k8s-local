@@ -1,6 +1,9 @@
 
 ## Log
 
+## Learnings
+
+- be patient - in some cases the documentation suggests it will be 10 minutes from running the kapp command to having a running foundry locally, give it plenty of time to stabilise, use the docker dashboard to watch the deployment. The kapp command may throw errors and it all looks like its going wrong, just ignore that and refer to the dashboard or kubectl.
 
 ### 2020-01-04 
 
