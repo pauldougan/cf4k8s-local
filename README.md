@@ -17,4 +17,4 @@ a firebreak hack to explore options for running CF locally using:
 - [Brewfile](Brewfile) - dependencies for mac
 - [Makefile](Makefile) - document activities as a gnu make file
 - [log](docs/log.md) - log of progress
-- [resources](docs/resources) -some useful resources
+- [resources](docs/resources.md) -some useful resources
