@@ -12,6 +12,9 @@ Useful resources for learning about kubernetes, minikube and cf4k8s
 
 # Paketo Buildpacks
 - [docs](https://paketo.io/docs/)
+- https://github.com/paketo-buildpacks 
+- https://github.com/paketo-community
+- https://github.com/paketo-buildpacks/samples
 
 # Kubernetes
 - [kubernetes.io](https://kubernetes.io/)
