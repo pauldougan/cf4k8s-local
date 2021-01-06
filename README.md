@@ -11,6 +11,8 @@ a firebreak hack to explore options for running CF locally using:
 - [kubernetes](https://kubernetes.io/docs/home/)
 - [cf-for-k8s](https://cf-for-k8s.io/docs/)
 
+![diagram showing the various components](docs/diagrams-STACK.svg)
+
 ## Contents
 
 - [casts](casts) - asciinema screencasts
