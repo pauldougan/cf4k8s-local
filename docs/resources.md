@@ -15,7 +15,7 @@ Useful resources for learning about kubernetes, minikube and cf4k8s
 
 # Kubernetes
 - [kubernetes.io](https://kubernetes.io/)
-- [concepts](https://kubernetes.io/docs/concepts/)
+  - [concepts](https://kubernetes.io/docs/concepts/)
 - kapp
 - kubectl
 - ytt
