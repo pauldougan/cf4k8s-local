@@ -1,8 +1,11 @@
-# cf4k8s on minikube 
+# cf4k8s locally 
 
-> running cf4k8s on minikube
+> running cf4k8s locally 
 
-a firebreak hack
+a firebreak hack to explore options for running CF locally using:
+- minikube
+- kind
+
 
 - casts - asciinema screencasts
 - Brewfile - dependencies for mac
