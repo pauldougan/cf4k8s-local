@@ -7,7 +7,7 @@ Useful resources for learning about kubernetes, minikube and cf4k8s
   - [cloudfoundry/cf-for-k8s](https://github.com/cloudfoundry/cf-for-k8s)
   - [project page](https://cf-for-k8s.io/)
 - [Stark and Wayne Blog nov 2020](https://starkandwayne.com/blog/running-cf-for-k8s-on-minikube/)
-- cf cli 
+- [cf cli](https://docs.cloudfoundry.org/cf-cli/) 
 - bosh cli
 
 # Paketo Buildpacks
